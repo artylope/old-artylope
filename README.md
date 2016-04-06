@@ -30,6 +30,10 @@ And now back to [the first link][another place].
 
 ![A representation of Octdrey Catburn](http://octodex.github.com/images/octdrey-catburn.jpg)
 
+[First Father]![The first father](http://octodex.github.com/images/founding-father.jpg)
+
+![The second first father](http://octodex.github.com/images/foundingfather_v2.png)[Second Father]
+
 ### Header 3
 
 > This is a blockquote.
