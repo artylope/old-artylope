@@ -18,6 +18,17 @@ http://www.markdowntutorial.com/
 Writing in Markdown is _not_ that hard!
 I **will** complete these lessons!
 If you're thinking to yourself, **_This is unbelievable_**, you'd probably be right.
+[This is a link to google](www.google.com)
+You're [**really, really**](www.dailykitten.com) going to want to see this.
+
+Here's [a link to something else][another place].
+Here's [yet another link][another-link].
+And now back to [the first link][another place].
+
+[another place]: www.github.com
+[another-link]: www.google.com
+
+![A representation of Octdrey Catburn](http://octodex.github.com/images/octdrey-catburn.jpg)
 
 ### Header 3
 
