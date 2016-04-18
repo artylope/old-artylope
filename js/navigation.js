@@ -1,6 +1,6 @@
 $(document).ready(function(){
     $("#nav-mobile").html($("#nav-main").html());
-    $("#nav-trigger span").click(function(){
+    $("#nav-trigger").click(function(){
         if ($("nav#nav-mobile ul").hasClass("expanded")) {
             $("nav#nav-mobile ul.expanded").removeClass("expanded").slideUp(100);
             $(this).removeClass("open");

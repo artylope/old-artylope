@@ -6,12 +6,12 @@ a{
 
 #nav-trigger {
   display: none;
-  text-align: center; }
+  text-align: center; 
+    background-color: #e9e9e9;}
   #nav-trigger span {
     display: inline-block;
     padding: 10px 30px;
-    background-color: #ff0032;
-    color: white;
+    color: #323232;
     cursor: pointer;
     text-transform: uppercase; }
     #nav-trigger span:after {
@@ -23,20 +23,22 @@ a{
       border-left: solid 10px transparent;
       border-top: solid 10px #fff;
       border-right: solid 10px transparent; }
-    #nav-trigger span:hover {
-      background-color: #e6002d; }
-    #nav-trigger span.open:after {
+    #nav-trigger:hover {
+      background-color: #c7c7c7; }
+    #nav-trigger.open:after {
       border-left: solid 10px transparent;
       border-top: none;
       border-bottom: solid 10px #fff;
       border-right: solid 10px transparent; }
 
 nav {
-  margin-bottom: 30px; }
+  margin-bottom: 0px;
+  font-size: 1.2em;}
 
 nav#nav-main {
-  background-color: #ff0032;
-  padding: 10px 0; }
+  background-color: #e9e9e9;
+  padding: 0px;
+}
   nav#nav-main ul {
     list-style-type: none;
     margin: 0;
@@ -44,18 +46,19 @@ nav#nav-main {
     text-align: center; }
   nav#nav-main li {
     display: inline-block;
-    border-right: solid 1px #cc0028;
     padding: 0 5px; }
     nav#nav-main li:last-child {
       border-right: none; }
   nav#nav-main a {
     display: block;
-    color: white;
-    padding: 10px 30px; 
+    color: #ff0032;
+    padding: 15px 30px; 
     text-decoration: none;}
     nav#nav-main a:hover {
-      background-color: #e6002d;
-      color: #fff; }
+      background-color: #FFF;
+     font-weight: 800px;
+      text-decoration: underline;
+      color: #ff0032; }
 
 nav#nav-mobile {
   position: relative;
@@ -82,9 +85,11 @@ nav#nav-mobile {
     display: block;
     color: white;
     padding: 10px 30px; 
-    text-decoration: none;}
+    text-decoration: none;
+    }
     nav#nav-mobile a:hover {
       background-color: #e6002d;
+    
       color: #fff; }
 
 /* =Media Queries
