@@ -1,0 +1,22 @@
+body {
+  /* font-family: 'Fira Mono', monospace; */
+  font-family: 'EB Garamond', serif;
+  background-color: $body-bg;
+  color: $body-text;
+  font-size: 2.0em;
+  letter-spacing: 1px;
+}
+
+.cover {
+  left: 0;
+  top: 0;
+  background: url(../images/intro.png) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 800px;
+  width: 100%;
+  z-index: -10;
+  color: $body-text-inverse;
+}

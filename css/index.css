@@ -856,3 +856,100 @@ there.
 /* Larger than tablet */
 /* Larger than desktop */
 /* Larger than Desktop HD */
+/* main colors */
+/* nav colors */
+/* cover text */
+/* Utility Classes */
+/* Make element full width */
+.full-width {
+  width: 100%;
+  box-sizing: border-box; }
+
+/* Make sure elements don't run outside containers (great for images in columns) */
+.max-full-width {
+  max-width: 100%;
+  box-sizing: border-box; }
+
+/* Float either direction */
+.pull-right {
+  float: right; }
+
+.pull-left {
+  float: left; }
+
+/* Float either direction */
+.text-center {
+  text-align: center; }
+
+.text-right {
+  text-align: right; }
+
+.text-left {
+  text-align: left; }
+
+/* Clear a float */
+.clearfix {
+  content: "";
+  display: table;
+  clear: both; }
+
+h1, h2, h3, h4, h5, h6 {
+  /* font-family: 'Josefin Sans', sans-serif; */
+  font-family: 'Montserrat', sans-serif;
+  /* font-family: 'EB Garamond', serif; */
+  letter-spacing: 2px;
+  margin-top: 1rem;
+  margin-bottom: 2rem; }
+
+body {
+  /* font-family: 'Fira Mono', monospace; */
+  font-family: 'EB Garamond', serif;
+  background-color: #f9f6f0;
+  color: #333;
+  font-size: 2.0em;
+  letter-spacing: 1px; }
+
+.cover {
+  left: 0;
+  top: 0;
+  background: url(../images/intro.png) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 800px;
+  width: 100%;
+  z-index: -10;
+  color: #f9f6f0; }
+
+nav {
+  width: 100%;
+  text-align: center;
+  position: fixed;
+  z-index: 10; }
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; }
+    nav ul li {
+      display: inline-block;
+      padding: 20px 30px; }
+      nav ul li a {
+        text-decoration: none;
+        color: #c9c8c8;
+        text-transform: lowercase;
+        letter-spacing: 2px; }
+        nav ul li a::before {
+          content: "{ ";
+          visibility: hidden; }
+        nav ul li a::after {
+          content: " }";
+          visibility: hidden; }
+        nav ul li a:hover, nav ul li a :active {
+          color: #f9f6f0; }
+          nav ul li a:hover::before, nav ul li a :active::before {
+            content: "{ ";
+            visibility: visible; }
+          nav ul li a:hover::after, nav ul li a :active::after {
+            content: " }";
+            visibility: visible; }
