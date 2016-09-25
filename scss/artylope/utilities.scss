@@ -1,0 +1,38 @@
+/* Utility Classes */
+
+/* Make element full width */
+.full-width {
+  width: 100%;
+  box-sizing: border-box;
+}
+/* Make sure elements don't run outside containers (great for images in columns) */
+.max-full-width {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* Float either direction */
+.pull-right {
+  float: right;
+}
+.pull-left {
+  float: left;
+}
+
+/* Float either direction */
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+.text-left {
+  text-align: left;
+}
+
+/* Clear a float */
+.clearfix {
+  content: "";
+  display: table;
+  clear: both;
+}
