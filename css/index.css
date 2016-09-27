@@ -856,9 +856,10 @@ there.
 /* Larger than tablet */
 /* Larger than desktop */
 /* Larger than Desktop HD */
+/* artylope colors */
+/* typography colors */
 /* main colors */
 /* nav colors */
-/* cover text */
 /* Utility Classes */
 /* Make element full width */
 .full-width {
@@ -895,16 +896,17 @@ there.
 
 h1, h2, h3, h4, h5, h6 {
   /* font-family: 'Josefin Sans', sans-serif; */
-  font-family: 'Montserrat', sans-serif;
-  /* font-family: 'EB Garamond', serif; */
+  font-family: "Montserrat", sans-serif;
   letter-spacing: 2px;
   margin-top: 1rem;
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem;
+  color: #2b31b4;
+  text-decoration: underline; }
 
 body {
   /* font-family: 'Fira Mono', monospace; */
   font-family: 'EB Garamond', serif;
-  background-color: #f9f6f0;
+  background-color: #eeeeee;
   color: #333;
   font-size: 2.0em;
   letter-spacing: 1px; }
@@ -920,7 +922,7 @@ body {
   min-height: 800px;
   width: 100%;
   z-index: -10;
-  color: #f9f6f0; }
+  color: #eeeeee; }
 
 nav {
   width: 100%;
@@ -933,23 +935,24 @@ nav {
     padding: 0; }
     nav ul li {
       display: inline-block;
-      padding: 20px 30px; }
+      padding: 20px 40px; }
       nav ul li a {
         text-decoration: none;
-        color: #c9c8c8;
+        color: #eeeeee;
         text-transform: lowercase;
         letter-spacing: 2px; }
         nav ul li a::before {
-          content: "{ ";
+          content: "";
           visibility: hidden; }
         nav ul li a::after {
-          content: " }";
+          content: "";
           visibility: hidden; }
         nav ul li a:hover, nav ul li a :active {
-          color: #f9f6f0; }
+          color: white;
+          text-decoration: underline; }
           nav ul li a:hover::before, nav ul li a :active::before {
-            content: "{ ";
+            content: "";
             visibility: visible; }
           nav ul li a:hover::after, nav ul li a :active::after {
-            content: " }";
+            content: "";
             visibility: visible; }

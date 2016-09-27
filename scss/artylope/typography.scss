@@ -1,8 +1,9 @@
 h1, h2, h3, h4, h5, h6 {
   /* font-family: 'Josefin Sans', sans-serif; */
-  font-family: 'Montserrat', sans-serif;
-  /* font-family: 'EB Garamond', serif; */
+  font-family: $text-heading;
   letter-spacing: 2px;
   margin-top: 1rem;
   margin-bottom: 2rem;
+  color: $heading-color;
+  text-decoration: underline;
 }

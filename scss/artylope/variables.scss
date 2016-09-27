@@ -1,14 +1,23 @@
+/* artylope colors */
+$arty-blue            :    #2b31b4;
+$arty-yellow          :    #fff4cc;
+$arty-coral           :    #ffdada;
+$arty-dark            :    #333;
+$arty-white           :    #eeeeee;
+$arty-grey           :     #737373;
+
+
+/* typography colors */
+$text-primary         :    'EB Garamond', serif;
+$text-heading         :    'Montserrat', sans-serif;
+
 /* main colors */
-$body-bg              :     #f9f6f0;
-$body-text            :     #333;
-$body-text-inverse    :     #f9f6f0;
+$body-bg              :     $arty-white;
+$body-text            :     $arty-dark;
+$body-text-inverse    :     $arty-white;
+$heading-color        :     $arty-blue;
 
 /* nav colors */
-$nav-link             :     #c9c8c8;
-$nav-link-hover       :     #f9f6f0;
-$nav-link-active      :    #f9f6f0;
-
-/* cover text */
-$nav-link             :     #c9c8c8;
-$nav-link-hover       :     #f9f6f0;
-$nav-link-active      :    #f9f6f0;
+$nav-link             :     $arty-white;
+$nav-link-hover       :     lighten($arty-white,15%);
+$nav-link-active      :     lighten($arty-white,15%);
