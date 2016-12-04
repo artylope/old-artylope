@@ -48,18 +48,31 @@ nav {
       &.icon {
         display: none;
       }
+      &.mobile {
+        display: none;
+      }
     }
   }
 
   @media screen and (max-width:680px) {
     ul.topnav{
-      background-color: $arty-blue;
+      background-color: $arty-dark;
       li{
         &:not(:first-child){
           display: none;
         }
         &.icon{
+          font-size: 15px;
+          padding: 20px;
           float: right;
+          display: inline-block;
+          a{
+            &:hover{
+              text-decoration: none;
+            }
+          }
+        }
+        &.mobile{
           display: inline-block;
         }
       }
@@ -78,6 +91,10 @@ nav {
             position: absolute;
             right: 0;
             top: 0;
+          }
+          &.mobile{
+            position: absolute;
+            text-align: center;
           }
         }
       }

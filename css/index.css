@@ -873,7 +873,7 @@ body {
   /* font-family: 'Fira Mono', monospace; */
   font-family: 'EB Garamond', serif;
   background-color: #eeeeee;
-  color: #333;
+  color: #30343b;
   font-size: 2.0em;
   letter-spacing: 1px; }
 
@@ -931,13 +931,21 @@ nav {
             visibility: visible; }
       nav ul.topnav li.icon {
         display: none; }
+      nav ul.topnav li.mobile {
+        display: none; }
   @media screen and (max-width: 680px) {
     nav ul.topnav {
-      background-color: #2b31b4; }
+      background-color: #30343b; }
       nav ul.topnav li:not(:first-child) {
         display: none; }
       nav ul.topnav li.icon {
+        font-size: 15px;
+        padding: 20px;
         float: right;
+        display: inline-block; }
+        nav ul.topnav li.icon a:hover {
+          text-decoration: none; }
+      nav ul.topnav li.mobile {
         display: inline-block; }
       nav ul.topnav.responsive {
         position: relative; }
@@ -950,7 +958,10 @@ nav {
           nav ul.topnav.responsive li.icon {
             position: absolute;
             right: 0;
-            top: 0; } }
+            top: 0; }
+          nav ul.topnav.responsive li.mobile {
+            position: absolute;
+            text-align: center; } }
 
 #timeline .timeline-item:after, #timeline .timeline-item:before {
   content: '';
