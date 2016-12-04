@@ -1,12 +1,10 @@
-$(document).ready(function(){
-    $("#nav-mobile").html($("#nav-main").html());
-    $("#nav-trigger").click(function(){
-        if ($("nav#nav-mobile ul").hasClass("expanded")) {
-            $("nav#nav-mobile ul.expanded").removeClass("expanded").slideUp(100);
-            $(this).removeClass("open");
-        } else {
-            $("nav#nav-mobile ul").addClass("expanded").slideDown(100);
-            $(this).addClass("open");
-        }
-    });
-});
+//responsive main menu
+
+function mainMenu() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}

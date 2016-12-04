@@ -4,7 +4,7 @@ nav {
   position: absolute;
   z-index: 10;
 
-  ul {
+  ul.topnav{
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -29,7 +29,8 @@ nav {
           visibility: hidden;
         }
 
-        &:hover,:active {
+        &:hover,
+        :active {
           color: $nav-link-hover;
           text-decoration: underline;
 
@@ -41,6 +42,42 @@ nav {
           &::after {
             content: "";
             visibility: visible;
+          }
+        }
+      }
+      &.icon {
+        display: none;
+      }
+    }
+  }
+
+  @media screen and (max-width:680px) {
+    ul.topnav{
+      background-color: $arty-blue;
+      li{
+        &:not(:first-child){
+          display: none;
+        }
+        &.icon{
+          float: right;
+          display: inline-block;
+        }
+      }
+      &.responsive {
+      position: relative;
+        li{
+          float: none;
+          display: inline;
+
+          & a{
+            display: block;
+            text-align: center;
+
+          }
+          &.icon{
+            position: absolute;
+            right: 0;
+            top: 0;
           }
         }
       }

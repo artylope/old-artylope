@@ -899,33 +899,58 @@ nav {
   text-align: center;
   position: absolute;
   z-index: 10; }
-  nav ul {
+  nav ul.topnav {
     list-style-type: none;
     margin: 0;
     padding: 0; }
-    nav ul li {
+    nav ul.topnav li {
       display: inline-block;
       padding: 20px 40px; }
-      nav ul li a {
+      nav ul.topnav li a {
         text-decoration: none;
         color: #fcbbbb;
         text-transform: lowercase;
         letter-spacing: 2px; }
-        nav ul li a::before {
+        nav ul.topnav li a::before {
           content: "";
           visibility: hidden; }
-        nav ul li a::after {
+        nav ul.topnav li a::after {
           content: "";
           visibility: hidden; }
-        nav ul li a:hover, nav ul li a :active {
+        nav ul.topnav li a:hover,
+        nav ul.topnav li a :active {
           color: white;
           text-decoration: underline; }
-          nav ul li a:hover::before, nav ul li a :active::before {
+          nav ul.topnav li a:hover::before,
+          nav ul.topnav li a :active::before {
             content: "";
             visibility: visible; }
-          nav ul li a:hover::after, nav ul li a :active::after {
+          nav ul.topnav li a:hover::after,
+          nav ul.topnav li a :active::after {
             content: "";
             visibility: visible; }
+      nav ul.topnav li.icon {
+        display: none; }
+  @media screen and (max-width: 680px) {
+    nav ul.topnav {
+      background-color: #2b31b4; }
+      nav ul.topnav li:not(:first-child) {
+        display: none; }
+      nav ul.topnav li.icon {
+        float: right;
+        display: inline-block; }
+      nav ul.topnav.responsive {
+        position: relative; }
+        nav ul.topnav.responsive li {
+          float: none;
+          display: inline; }
+          nav ul.topnav.responsive li a {
+            display: block;
+            text-align: center; }
+          nav ul.topnav.responsive li.icon {
+            position: absolute;
+            right: 0;
+            top: 0; } }
 
 #timeline .timeline-item:after, #timeline .timeline-item:before {
   content: '';
