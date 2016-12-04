@@ -1,7 +1,7 @@
 /* artylope colors */
 $arty-blue            :    #2b31b4;
-$arty-yellow          :    #fff4cc;
-$arty-coral           :    #ffdada;
+$arty-yellow          :    #ffe55e;
+$arty-coral           :    #fcbbbb;
 $arty-dark            :    #333;
 $arty-white           :    #eeeeee;
 $arty-grey           :     #737373;
@@ -18,6 +18,6 @@ $body-text-inverse    :     $arty-white;
 $heading-color        :     $arty-blue;
 
 /* nav colors */
-$nav-link             :     $arty-white;
+$nav-link             :     $arty-coral;
 $nav-link-hover       :     lighten($arty-white,15%);
 $nav-link-active      :     lighten($arty-white,15%);
