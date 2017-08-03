@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
   <!-- Basic Page Needs
@@ -15,63 +16,116 @@
 
   <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Fira+Mono:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/skeleton.css">
-  <link rel="stylesheet" href="css/custom.css">
-  
+  <link rel="stylesheet" href="css/index.css">
+
+
   <!-- JS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
- 
-  <script src="js/jquery-2.2.3.min.js"></script>
-    
+
+  <!--   <script src="js/jquery-2.2.3.min.js"></script> -->
+
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="images/favicon.png">
 
 </head>
+
 <body>
-    
-<!-- Navigation
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-    <nav id="nav-main">
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="works.html">Works</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="#">About</a></li>
+  <!-- Navigation
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div id="about-page">
+  <nav>
+    <ul class="topnav" id="myTopnav">
+      <li class="mobile">
+        <a href="#"></a>
+      </li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="works.html">Works</a></li>
+      <li><a href="process.html">Process</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a class="active" href="#">About</a></li>
+      <li class="icon">
+        <a href="javascript:void(0);" onclick="mainMenu()">☰</a>
     </ul>
-</nav>
-<div id="nav-trigger">
-    <span>Menu</span>
-</div>
-<nav id="nav-mobile"></nav>
+  </nav>
 
-    
- <!-- Primary Page Layout
+
+  <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  
-<div class="container">
-    <div class="row">
-      <div class="one-half column" style="margin-top: 25%">
-          <p>Hi, I am Yi Xin, UI/UX designer working at IDA, the government technology agency of Singapore. I enjoy making cool and useful stuff that aims to improve the lives of citizens. I like how user research enables us to make informed design decisions beyond aesthetics. Woots design thinking! To create intuitive and effective products that meets business goals and solve users’ pain points, I adopt UX methodologies like user scenarios, journey maps, prototyping and wireframing. By understanding users, I craft better experiences. And I need to improve on my gibberish writing. </p>
-<p>
-My most recent work is Beeline, a crowdsource transport experiment. Before Beeline, I worked on One Upon Light, an award-winning indie monochromatic puzzle game about light and shadows on Sony PS4, done together with the awesome people at SUTD Game Lab. I have also mentored young designers and developers on design and development practices at the Game Innovation Programme. I enjoy working in a dynamic and collaborative environment where every team member comes from a different background and has something to contribute. How design and technology can transform brands and lifestyle excites me.</p>
-<p>
-While it was fun and challenging making games, I have since moved on to work on more practical application of digital experiences as the rational side of me aspires to contribute to meaningful products that can impact people’s life more directly. I personally believe that the real world can benefit from more design! Otherwise, game development and other forms of product development shares a lot in common from tools, processes to roles and dynamics. And I am learning how to code!</p>
-<p>
-Outside of designing digital stuff, I swim, cycle and obsess about Scandinavian and mid-century furniture. I enjoy taking bokehlicious snaps too. And a good cup of milk green tea with lots of froth!
-</p>
+    <div class="container">
+      <div class="row">
+
+        <div id="timeline">
+          <div class="timeline-item">
+            <div class="timeline-icon">
+            </div>
+            <div class="timeline-content">
+              <h4>LOREM IPSUM DOLOR</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, facilis quo maiores magnam modi ab libero praesentium blanditiis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, facilis quo maiores magnam modi ab libero praesentium blanditiis.
+              </p>
+              <a href="#" class="btn">button</a>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-icon">
+
+
+            </div>
+            <div class="timeline-content right">
+              <h4>LOREM IPSUM DOLOR</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, facilis quo. Maiores magnam modi ab libero praesentium blanditiis consequatur aspernatur accusantium maxime molestiae sunt ipsa.
+              </p>
+              <a href="#" class="btn">button</a>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-icon">
+
+            </div>
+            <div class="timeline-content">
+              <h4>LOREM IPSUM DOLOR</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, facilis quo. Maiores magnam modi ab libero praesentium blanditiis consequatur aspernatur accusantium maxime molestiae sunt ipsa.
+              </p>
+              <a href="#" class="btn">button</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="container">
+      <div class="row" style="margin-top: 25%;">
+          <p>Hi, I am Yi Xin, a UI/UX designer at GovTech, the Government Technology Agency of Singapore. I design products that aims to improve the lives of citizens.</p>
+          <p>
+            My most recent work is Beeline, a crowdsource transport experiment, and the Digital Parking App, a system that replaces the current paper parking coupon. Prior to Beeline and Digital Parking, I worked on One Upon Light, a monochromatic puzzle game about light and shadows. I enjoy working in a dynamic and collaborative environment where every team member comes from a different background and has something to contribute.</p>
+          <p>
+            While it was fun and challenging making games, the rational side of me aspires to contribute to meaningful products that can impact people’s life more directly. I personally
+            believe that the real world can benefit from more design! Otherwise, game development and product development share a lot in common- from tools, processes to roles and dynamics. And I am also learning Javascript, so that I can emphatise with developers even more to make great products.</p>
+          <p>
+            Outside of designing digital stuff, I swim, cycle and obsess about Scandinavian and mid-century furniture. I enjoy taking bokehlicious snaps too. And a good cup of milk green tea with lots of froth!
+          </p>
+
       </div>
     </div>
   </div>
 
-<!-- End Document
+  <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <script src="js/navigation.js"></script>
 </body>
+
 </html>
